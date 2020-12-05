@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunplant - MultiPurpose Plant Store Website Layout Practice</title>
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            list-style: none;
+        }
+        .wrapper{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+        .loginPage{
+            background: url("./ImgForPlantWeb/background.png");
+
+        }
+        nav .wrapper{
+            padding: 30px 20px;
+            justify-content: space-between;  
+        }
+        nav .toAnotherPage{
+            width: 500px;
+        }
+        nav .toAnotherPage ul{
+            display: flex;
+            flex-direction: row;
+        justify-items:space-between;
+        align-items:flex-end;
+        }
+        nav .toAnotherPage ul li{
+        padding : 0 20px;
+        font-size: 15px;
+        font-weight: 600;
+        }
+        nav .toAnotherPage  a{
+            text-decoration: none;
+            color: #000;
+            position: relative;
+        }
+        nav .toAnotherPage a:hover{
+            text-decoration: none;
+            color: #3f5e2d;
+        }
+        nav .toAnotherPage a span{
+            position: absolute;
+            color:#fff;
+            top:-100%;
+            right: 0;
+            width: 40px;
+            height: 16px;
+            font-size: 12px;
+            text-align: center;
+            background-color: #0fb7eb;
+        }
+        nav .toAnotherPage  a span.triangle::before{
+            content: "123";
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-top: 20px solid  #2c464e;
+            display:inline-block;
+            position: absolute;
+            left: 0;
+        }
+        nav .logoPattern{
+            width: 300px;
+            position:initial;
+        }
+        nav .logoPattern img{
+            display: flex;
+            width: 150px;
+            height: 40px;
+        }
+        nav .rightIcon{
+            width: 400px;
+            display: flex;
+            justify-content:flex-end;
+        }
+        nav .iconItem{
+            padding :10px;
+        }
+        nav .iconItem a{
+            text-decoration: none;
+            color: #000;
+            font-weight: 800;
+        }
+        nav .iconItem img{
+            width: 25px;
+        }
+        nav .iconItem span{
+           float:right;
+           
+           width: 2%;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="loginPage">
+        <nav>
+            <div class="wrapper">
+                <div class="toAnotherPage">
+                    <ul>
+                        <li><a href="">Home</a> </li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Featured <span class="triggler"></span>
+                            <span>NEW</span></a></li>
+                            
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Element<span class="triggler"></span>
+                            <span>NEW</span></a></li></a></li>
+                            
+                    </ul>
+
+                </div>
+                <div class="logoPattern">
+                    <img src="./ImgForPlantWeb/logo.png" alt="logo">
+                </div>
+                <div class="rightIcon">
+                    <div class="iconItem">
+                        
+                        <a href="">
+                            <img src="./ImgForPlantWeb/search.svg" alt="search">
+                        </a>
+                    </div>
+                    <div class="iconItem">
+                        
+                        <a href="">
+                            <img src="./ImgForPlantWeb/login.svg" alt="login">
+                        </a>
+                    </div>
+                    <div class="iconItem">
+                        
+                        
+                        <a href="">
+                            <img src="./ImgForPlantWeb/shopcar.svg" alt="ShopCar">
+                            
+                        </a>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</body>
+</html>

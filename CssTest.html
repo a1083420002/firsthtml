@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    /* 具強大破壞力的reset */
+    /* *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    } */
+    </style>
+    <!-- 另一種reset，威力較小 -->
+    <!-- <link rel="stylesheet" type="text/css" href="normalize.css"> -->
+</head>
+<body>
+    <style>
+        /* p為選取器 */
+        #first{
+            color: pink;
+        }
+        .intro{
+            color: purple;
+        }
+        p{
+            color:red;
+            font-size: 30px;
+            border: 1px solid red;
+        }
+        .ForTest p{
+            color: saddlebrown;
+        }
+        p.box{
+            color: springgreen !important;
+            /* !important大於一切 */
+        }
+        .box, p, span 
+        {           color: tomato ;
+                    font-size: 20px;
+        }
+        a:visited{
+            color:grey;
+        }
+        a:focus{
+            color: seagreen;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color: red;
+        }
+
+   
+    </style>
+    <h1>title</h1>
+    <h2>title</h2>
+    <p class="intro" id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia natus rerum aspernatur iusto ut distinctio sequi? Sit similique aspernatur veritatis consequatur unde quod,
+        suscipit voluptate dicta nobis nihil distinctio tempore.</p>
+    <div class="ForTest"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis veniam accusantium repellat optio vel, ea minus nesciunt facere doloribus, 
+        autem illum provident ab officiis quidem explicabo iure placeat est ullam?</p>   </div>
+   
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam cupiditate dolores, quasi blanditiis esse numquam ut natus 
+        accusamus ad totam dolore velit non quo ipsa a magni hic asperiores.</p>
+    <p class="box" style="color: steelblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum suscipit eos voluptatum totam. Mollitia possimus dignissimos iusto labore voluptas, dolores reiciendis suscipit, 
+        asperiores optio laboriosam nemo consectetur ea harum.</p>
+    <div class="box">Lorem ipsum <a href="">sit</a>  amet consectetur adipisicing elit. Doloribus voluptas quas sunt minima quae deserunt voluptatibus, culpa amet aperiam quo esse, 
+        consectetur nihil earum dolorem dolores eligendi assumenda placeat possimus?</div>
+    <div class="for_test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptas quas sunt minima quae deserunt voluptatibus, culpa amet aperiam quo esse, 
+    consectetur nihil earum dolorem dolores eligendi assumenda placeat possimus?</div>
+    <p class="for_test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non qui error voluptas cumque cupiditate voluptate autem et beatae exercitationem reprehenderit nam ullam quas 
+        consequatur iusto quaerat, maxime, doloremque, ipsum dolor.</p>
+    <span class="for_test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis harum rem minima officia dolorum earum obcaecati! Aliquid odio quibusdam distinctio amet mollitia  
+        omnis corrupti sit consectetur impedit, ipsum dolor commodi?</span>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ol>
+</body>
+</html>
