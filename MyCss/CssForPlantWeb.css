@@ -418,8 +418,8 @@ nav .iconItem span{
 }
 
 .IGShow img{
-    width: 260px;
-    margin: 20px;
+    width: 240px;
+    margin: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
