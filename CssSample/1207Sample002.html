@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .group{
+            width: 900px;
+            height: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: blue;
+        }
+
+
+        .pattarn{
+            
+            display: flex;
+            flex-direction: row;
+            padding: 50px 0;
+            margin: 10px;
+            
+        }  
+        .pattarn +.pattarn{
+            border-top: 1px solid black;
+        }
+        .pattarn:nth-child(even)
+        {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .pattarn .pic img{
+            width: 100%;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="group">
+        <div class="pattarn">
+            <div class="pic"><img src="https://picsum.photos/300/300/?random=1"></div>
+            <div class="txt">
+            <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla sed et tempore non facilis qui? Beatae enim assumenda impedit magni! 
+                Minus aliquam vero libero obcaecati et cupiditate accusamus odit.</p>
+            </div>
+        </div>
+        <div class="pattarn">
+            <div class="pic"><img src="https://picsum.photos/300/300/?random=1"></div>
+            <div class="txt">
+            <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla sed et tempore non facilis qui? Beatae enim assumenda impedit magni! 
+                Minus aliquam vero libero obcaecati et cupiditate accusamus odit.</p>
+            </div>
+        </div>
+        <div class="pattarn">
+            <div class="pic"><img src="https://picsum.photos/300/300/?random=1"></div>
+            <div class="txt">
+            <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae nulla sed et tempore non facilis qui? Beatae enim assumenda impedit magni! 
+                    Minus aliquam vero libero obcaecati et cupiditate accusamus odit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif ,'Poppins';
     list-style: none;
 }
 .wrapper{
             width: 1200px;
             display: flex;
             align-items: center;
+            
         }
 .head-bar {
-  position: fixed;
+  margin: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,10 +23,12 @@
 }
 
 .loginPage{
+    margin: auto;
     background: url("./ImgForPlantWeb/background.png");
 
 }
 nav .wrapper{
+    margin: auto;
     padding: 30px 20px;
     justify-content: space-between;  
 }
@@ -103,6 +106,10 @@ nav .iconItem span{
    width: 2%;
 }
 
+.firstPage .wrapperFirstPage{
+    width: 1200px;
+    margin: auto;
+}
 .firstPage .introduction{
     width: 400px;
     margin: 100px;
@@ -114,7 +121,7 @@ nav .iconItem span{
 }
 .firstPage .introductionPic{
     width: 600px;
-    
+    margin: 100px 0 0 0;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -135,7 +142,7 @@ nav .iconItem span{
 }
 .firstPage .introduction p{
     line-height:40px;
-    margin: 15px 0 25px;
+    margin: 15px 0 100px;
     font-size: 15px;
     text-align: initial;
 }
@@ -165,6 +172,7 @@ nav .iconItem span{
 .secondPageTitle .wrapper {
     flex-direction: column;
     text-align: center;
+    margin: auto;
 }
 .secondPageTitle{
     margin-top: 50px;
@@ -176,7 +184,7 @@ nav .iconItem span{
     flex-wrap: wrap;
     text-align: center;
 }
-.secondPageTitle h1{
+.secondPageTitle h2{
     font-size: 25px;
     color:#396120;
     line-height: 1.5;
@@ -188,13 +196,27 @@ nav .iconItem span{
     text-align: center;
     color:rgb(143, 141, 141);
 }
-.thirdPage .item-list-left,
-.thirdPage .item-list-right{
-    width: 38%;
-    padding: 30px;
+.thirdPage {
+    width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    
 }
-.thirdPage .leftIntroduction h3,
+.thirdPage .wrapper{
+    margin: auto;
+}
+
+.thirdPage .leftIntroduction h3{
+    text-align: right;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.thirdPage .leftIntroduction p{
+    text-align: right;
+}
 .rightIntroduction h3{
+    text-align: left;
     line-height: 40px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -211,6 +233,7 @@ nav .iconItem span{
 }
 .commodity .wrapper{
     width: 1200px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,11 +317,14 @@ nav .iconItem span{
     color: #518432;
 }
 .videoPage{
+    
     background: url("../ImgForPlantWeb/background2.png") no-repeat;
+    background-size: cover;
     margin-bottom: 70px;
 }
 .videoPage .wrapper{
     padding : 80px 0;
+    margin: auto;
 }
 .videoPage .leftIntroduction{
     width: 50%;
@@ -377,12 +403,12 @@ nav .iconItem span{
     margin-bottom: 100px;
 }
 .shopIG .wrapper{
-    width: 100%;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction:row;
-    flex-wrap: wrap;
+    
 }
 .shopIG .IGPattern{
     
@@ -390,16 +416,15 @@ nav .iconItem span{
     letter-spacing: 3px;
     line-height: 50px;
 }
-.shopIG .IGShow {
-    width: calc(100%/4);
-    
-    
-    padding: 6px;
 
-}
 .IGShow img{
-    width: 100%;
+    width: 260px;
+    margin: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
 }
+
 .IGShow img:hover{
     filter: brightness(50%);
 }
