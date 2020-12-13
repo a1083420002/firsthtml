@@ -1,16 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif ,'Poppins';
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif ,'Poppins';
+  list-style: none;
 }
-.wrapper{
-            width: 1200px;
-            display: flex;
-            align-items: center;
-            
-        }
+
+.wrapper {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .head-bar {
   margin: auto;
   top: 0;
@@ -18,486 +24,641 @@
   width: 100%;
   height: 100px;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
-.loginPage{
-    margin: auto;
-    background: url("./ImgForPlantWeb/background.png");
-
-}
-nav .wrapper{
-    margin: auto;
-    padding: 30px 20px;
-    justify-content: space-between;  
-}
-nav .toAnotherPage{
-    width: 500px;
-}
-nav .toAnotherPage ul{
-    display: flex;
-    flex-direction: row;
-justify-items:space-between;
-align-items:flex-end;
-}
-nav .toAnotherPage ul li{
-padding : 0 20px;
-font-size: 15px;
-font-weight: 600;
-}
-nav .toAnotherPage  a{
-    text-decoration: none;
-    color: #000;
-    position: relative;
-}
-nav .toAnotherPage a:hover{
-    text-decoration: none;
-    color: #3f5e2d;
-}
-nav .toAnotherPage a span{
-    position: absolute;
-    color:#fff;
-    top:-100%;
-    right: 0;
-    width: 40px;
-    height: 16px;
-    font-size: 12px;
-    text-align: center;
-    background-color: #0fb7eb;
-}
-nav .toAnotherPage  a span.triangle::before{
-    content: "123";
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-top: 20px solid  #2c464e;
-    display:inline-block;
-    position: absolute;
-    left: 0;
-}
-nav .logoPattern{
-    width: 300px;
-    position:initial;
-}
-nav .logoPattern img{
-    display: flex;
-    width: 150px;
-    height: 40px;
-}
-nav .rightIcon{
-    width: 400px;
-    display: flex;
-    justify-content:flex-end;
-}
-nav .iconItem{
-    padding :10px;
-}
-nav .iconItem a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 800;
-}
-nav .iconItem img{
-    width: 25px;
-}
-nav .iconItem span{
-   float:right;
-   
-   width: 2%;
+.loginPage {
+  margin: auto;
+  background: url("./ImgForPlantWeb/background.png");
 }
 
-.firstPage .wrapperFirstPage{
-    width: 1200px;
-    margin: auto;
+nav .wrapper {
+  margin: auto;
+  padding: 30px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.firstPage .introduction{
-    width: 400px;
-    margin: 100px;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    box-sizing: border-box;
-    
-}
-.firstPage .introductionPic{
-    width: 600px;
-    margin: 100px 0 0 0;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-.firstPage .introductionPic img{
-    width: 100%;
-   
-    
-    
-    height: 400px;
-    z-index: 3;
 
+nav .toAnotherPage {
+  width: 500px;
 }
-.firstPage .introduction h1{
-    font-size: 50px;
-    font-weight: 100;
-    text-align: initial;
+
+nav .toAnotherPage ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-.firstPage .introduction p{
-    line-height:40px;
-    margin: 15px 0 100px;
-    font-size: 15px;
-    text-align: initial;
+
+nav .toAnotherPage ul li {
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
 }
-.firstPage .introduction .shopNow{
-    text-decoration: none;
-    display: inline-block;
-    width: 180px;
-    height: 50px;
-    border-radius: 2px;
-    background: #000;
-    color:#fff;
-    text-align: center;
-    line-height: 50px;
-    transition: all .2s;
-    letter-spacing: 2px;
-    font-size: 12px;
+
+nav .toAnotherPage a {
+  text-decoration: none;
+  color: #000;
+  position: relative;
 }
-.firstPage .wrapperFirstPage{
-    
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            flex-direction:row;
-            flex-wrap: wrap;
-            text-align: center;
+
+nav .toAnotherPage a:hover {
+  text-decoration: none;
+  color: #3f5e2d;
 }
+
+nav .toAnotherPage a span {
+  position: absolute;
+  color: #fff;
+  top: -100%;
+  right: 0;
+  width: 40px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #0fb7eb;
+}
+
+nav .toAnotherPage a span.triangle::before {
+  content: "123";
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 20px solid  #2c464e;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+nav .logoPattern {
+  width: 300px;
+  position: initial;
+}
+
+nav .logoPattern img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 40px;
+}
+
+nav .rightIcon {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .iconItem {
+  padding: 10px;
+}
+
+nav .iconItem a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+}
+
+nav .iconItem img {
+  width: 25px;
+}
+
+nav .iconItem span {
+  float: right;
+  width: 2%;
+}
+
+.firstPage .wrapperFirstPage {
+  width: 1200px;
+  margin: auto;
+}
+
+.firstPage .introduction {
+  width: 400px;
+  margin: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.firstPage .introductionPic {
+  width: 600px;
+  margin: 100px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.firstPage .introductionPic img {
+  width: 100%;
+  height: 400px;
+  z-index: 3;
+}
+
+.firstPage .introduction h1 {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: initial;
+}
+
+.firstPage .introduction p {
+  line-height: 40px;
+  margin: 15px 0 100px;
+  font-size: 15px;
+  text-align: initial;
+}
+
+.firstPage .introduction .shopNow {
+  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.firstPage .wrapperFirstPage {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
 .secondPageTitle .wrapper {
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-}
-.secondPageTitle{
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.secondPageTitle h2{
-    font-size: 25px;
-    color:#396120;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-.secondPageTitle em{
-    font-size: 10px;
-    flex-direction: column;
-    text-align: center;
-    color:rgb(143, 141, 141);
-}
-.thirdPage {
-    width: 1200px;
-    margin: auto;
-    box-sizing: border-box;
-    
-}
-.thirdPage .wrapper{
-    margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: auto;
 }
 
-.thirdPage .leftIntroduction h3{
-    text-align: right;
-    line-height: 40px;
-    font-size: 20px;
-    letter-spacing: 1px;
+.secondPageTitle {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
 }
-.thirdPage .leftIntroduction p{
-    text-align: right;
+
+.secondPageTitle h2 {
+  font-size: 25px;
+  color: #396120;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
-.rightIntroduction h3{
-    text-align: left;
-    line-height: 40px;
-    font-size: 20px;
-    letter-spacing: 1px;
+
+.secondPageTitle em {
+  font-size: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #8f8d8d;
 }
+
+.thirdPage {
+  width: 1200px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.thirdPage .wrapper {
+  margin: auto;
+}
+
+.thirdPage .leftIntroduction h3 {
+  text-align: right;
+  line-height: 40px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.thirdPage .leftIntroduction p {
+  text-align: right;
+}
+
+.rightIntroduction h3 {
+  text-align: left;
+  line-height: 40px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
 .thirdPage .leftIntroduction p,
-.rightIntroduction p{
-    font-size: 8px;
-    color:gray;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+.rightIntroduction p {
+  font-size: 8px;
+  color: gray;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
-.thirdPage .leftIntroduction{
-    text-align: right;
+
+.thirdPage .leftIntroduction {
+  text-align: right;
 }
-.commodity .wrapper{
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+
+.commodity .wrapper {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
-.commodity{
-    margin-bottom: 100px;
+
+.commodity {
+  margin-bottom: 100px;
 }
-.commodity .title{
-    text-align: justify;
-    justify-items: center;
-    color: #518432;
-    font-size: 45px;
-    font-weight: lighter;
+
+.commodity .title {
+  text-align: justify;
+  justify-items: center;
+  color: #518432;
+  font-size: 45px;
+  font-weight: lighter;
 }
 
 .commodity .wrapper .itemList {
-    
-    display: flex;
-    flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.commodity .wrapper .itemList .item{
-    width: 380px;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    line-height: 30px;
-    position: sticky;
-    box-sizing: border-box;
+
+.commodity .wrapper .itemList .item {
+  width: 380px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  line-height: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.commodity .item img{
-    transition: .4s;
-}
-.commodity .item img:hover{
-    filter: opacity(50%);
-}
-.commodity .item .saleTag{
-    position:absolute;
-    top:20px;
-    right:20px;
-    background: #518432;
-    color:#fff;
-    width: 50px;
-    height: 30px;
-    font-weight: 700;
-    font-size: 12px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    z-index: 2;
-}
-.commodity .item .saleOutTag{
-    position: absolute;
-    top:50px;
-    left:20px;
-    background: #518432;
-    color:#fff;
-    width: 80px;
-    height: 25px;
-    line-height: 25px;
-    font-weight: 700;
-    font-size: 12px;
-    z-index: 2;
-}
+
 .commodity .item img {
-    width: 100%;
-}
-.commodity .item h4 a{
-    text-decoration: none;
-    color: #000;
-    text-emphasis: none;
-}
-.commodity .item p{
-    font-weight:bold;
-}
-.commodity .item p span{
-    font-size: 15px;
-    font-weight: bold;
-    padding-right: 15px;
-}
-.commodity .item h4 a:hover{
-    color: #518432;
-}
-.videoPage{
-    
-    background: url("../ImgForPlantWeb/background2.png") no-repeat;
-    background-size: cover;
-    margin-bottom: 70px;
-}
-.videoPage .wrapper{
-    padding : 80px 0;
-    margin: auto;
-}
-.videoPage .leftIntroduction{
-    width: 50%;
-    padding: 0 50px 0 150px;
-    margin: 150px 0;
-}
-.videoPage .leftIntroduction h1{
-    font-size: 25px;
-    color: #518432;
-    line-height: 2;
-    letter-spacing: 3px;
-}
-.videoPage .leftIntroduction p{
-    font-size: 10px;
-    line-height: 2;
-    margin-bottom: 30px;
-}
-.videoPage .leftIntroduction a{
-    text-decoration: none;
-    color:#000;
-    display: inline-block;
-    border: 1px solid #000;
-    width: 150px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: all .3s;
-}
-.videoPage .leftIntroduction a span{
-
-    font-weight: lighter; 
-    position: absolute;
-    left: 10%;
-    transition: .3s;
-}
-.videoPage .leftIntroduction a::before{
-    content: "";
-    display: block;
-    position: absolute;
-    font-weight: lighter;
-    width: 100%;
-    height: 100%;
-    background: #518432;
-    color:#fff;
-    transform: translateY(-100%);
-    transition: all .3s;  
-}
-.videoPage .leftIntroduction a:hover:before{
-    transform: translateY(0);
-}
-.videoPage .leftIntroduction a:hover span{
-    color:#fff;
-}
-.videoPage .video{
-    position: relative;
-    width: 50%;
-    align-self: start;
-}
-.videoPage .video a{
-    display: inline-block;
-    width: 100%;
-    height: 400px;
-}
-.videoPage .video img{
-    position: absolute;
-    cursor: pointer;
-    width: 100%;
-    height: 400px;
-    z-index: 2;
-    top: 0;
-    left: 0;
-}
-.shopIG{
-    margin-bottom: 100px;
-}
-.shopIG .wrapper{
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction:row;
-    
-}
-.shopIG .IGPattern{
-    
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 50px;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.IGShow img{
-    width: 240px;
-    margin: 30px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
+.commodity .item img:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
 }
 
-.IGShow img:hover{
-    filter: brightness(50%);
-}
-.footer .wrapper{
-    width: 100%;
-
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    background-color: rgb(245, 240, 240);
-}
-.footer .logo{
-    margin: 30px ;
-}
-.footer .logo img{
-    width: 200px;
-    position:initial;
-}
-.footer .aboutUs ul{
-   display: flex;
-   flex-direction: row;
-}
-.footer .aboutUs li a{
-    margin: 40px;
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #000;
-}
-.footer .aboutUs li + li::before{
-    content: '';
-    background-color: #c2c1c1;
-    width: 20px;
-    height: 1px;
-    display: inline-table;
-    vertical-align: middle;
-}
-.footer .socialMediaIcon .icon{
-    text-decoration: none;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    margin:30px 10px;
-    position: relative;
-    overflow: hidden;
-}
-.footer .socialMediaIcon .icon i{
-    position: absolute;
-    transform: translate(-50%,100%);
-}
-.footer .socialMediaIcon .icon:before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #518432;
-    transform: translateY(100%);
-    transition: all .3s; 
-}
-.footer .socialMediaIcon .icon:hover:before{
-    transform: translateY(0);
-}
-.footer .copyright{
-    color: rgb(201, 198, 198);
-    margin: 1px 100px;
-    font-size: 15px;
+.commodity .item .saleTag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #518432;
+  color: #fff;
+  width: 50px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
 }
 
+.commodity .item .saleOutTag {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: #518432;
+  color: #fff;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 12px;
+  z-index: 2;
+}
 
+.commodity .item img {
+  width: 100%;
+}
+
+.commodity .item h4 a {
+  text-decoration: none;
+  color: #000;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+}
+
+.commodity .item p {
+  font-weight: bold;
+}
+
+.commodity .item p span {
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.commodity .item h4 a:hover {
+  color: #518432;
+}
+
+.videoPage {
+  background: url("../ImgForPlantWeb/background2.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.videoPage .wrapper {
+  padding: 80px 0;
+  margin: auto;
+}
+
+.videoPage .leftIntroduction {
+  width: 50%;
+  padding: 0 50px 0 150px;
+  margin: 150px 0;
+}
+
+.videoPage .leftIntroduction h1 {
+  font-size: 25px;
+  color: #518432;
+  line-height: 2;
+  letter-spacing: 3px;
+}
+
+.videoPage .leftIntroduction p {
+  font-size: 10px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.videoPage .leftIntroduction a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  border: 1px solid #000;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.videoPage .leftIntroduction a span {
+  font-weight: lighter;
+  position: absolute;
+  left: 10%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.videoPage .leftIntroduction a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  font-weight: lighter;
+  width: 100%;
+  height: 100%;
+  background: #518432;
+  color: #fff;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.videoPage .leftIntroduction a:hover:before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.videoPage .leftIntroduction a:hover span {
+  color: #fff;
+}
+
+.videoPage .video {
+  position: relative;
+  width: 50%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.videoPage .video a {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+}
+
+.videoPage .video img {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 400px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.shopIG {
+  margin-bottom: 100px;
+}
+
+.shopIG .wrapper {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.shopIG .IGPattern {
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.IGShow img {
+  width: 240px;
+  margin: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.IGShow img:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.footer .wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f5f0f0;
+}
+
+.footer .logo {
+  margin: 30px;
+}
+
+.footer .logo img {
+  width: 200px;
+  position: initial;
+}
+
+.footer .aboutUs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .aboutUs li a {
+  margin: 40px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer .aboutUs li + li::before {
+  content: '';
+  background-color: #c2c1c1;
+  width: 20px;
+  height: 1px;
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.footer .socialMediaIcon .icon {
+  text-decoration: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  margin: 30px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .socialMediaIcon .icon i {
+  position: absolute;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+}
+
+.footer .socialMediaIcon .icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #518432;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer .socialMediaIcon .icon:hover:before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.footer .copyright {
+  color: #c9c6c6;
+  margin: 1px 100px;
+  font-size: 15px;
+}
+/*# sourceMappingURL=CssForPlantWeb.css.map */

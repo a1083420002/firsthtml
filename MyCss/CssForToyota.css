@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "microsoft jhenghei",serif;
+    list-style: none;
+}
+
+.wrap{
+    width: 1200px;
+    
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.box{
+    margin: 100px;
+    border:2px ;
+    
+}
+.box1{
+    position:relative;
+    z-index: 1;
+    top:-200px;
+}
+
+.greyBlock{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    
+    top: 100px;
+    right: -800px;
+    z-index: -9;
+    background-color:rgb(253, 249, 249);
+}
+
+.box .title{
+    width: 300px;
+    height: 340px;
+    margin: 100px 0;
+    
+    
+}
+.box .titleIntern{
+    background-color: red;
+    font-size: 20px;
+    height: 100px;
+    
+
+}
+.pic1,.pic2,.pic3{
+    z-index: -1;
+}
+
+.titleIntro01{
+    text-align: left;
+    background-color: rgb(24, 23, 23);
+    padding: 20px 20px;
+    height: 200px;
+    font-size: 18px;
+}
+.titleIntro01 h2{
+    color:rgb(248, 242, 242);
+    font-size: 22px;
+}
+.titleIntro01 p{
+    color:rgb(248, 242, 242);
+    
+}
+.title01{
+    position:absolute;
+    
+    z-index: 1;
+    top:-200px;
+    left: 0px;
+}
+
+.introTitle01{
+    margin:10px 180px;
+    background-color: #dfdede;
+    width: 699px;
+    position: absolute;
+    top: -69px;
+    left: -180px;
+}
+.introTitle01 h3{
+    margin: 5px;
+    color:#cf0707;
+}
+.introTitle01 h3::after{
+    content: '';
+    background-color: #cf0707;
+    width: 450px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.intro{
+    text-align: left;
+    position: relative;
+    border:20px solid none;
+    z-index: 1;
+}
+.introTitle01 li{
+    background-color: rgb(5, 5, 5);
+    padding: 2px;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px 10px 5px 10px;
+    text-align: center;
+    
+}
+
+
+.introTitle02{
+    margin:10px 180px;
+    background-color: #dfdede;
+    width: 700px;
+    position: absolute;
+    top: -319px;
+    right: -180px;
+    z-index: 5;
+}
+.introTitle02 h3{
+    margin: 5px;
+    color:#cf0707;
+}
+.introTitle02 h3::after{
+    content: '';
+    background-color: #cf0707;
+    width: 450px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.introTitle02 li{
+    background-color: rgb(5, 5, 5);
+    padding: 2px;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px 10px 5px 10px;
+    text-align: center;
+    /* list-style: disc red; */
+}
+.box2{
+    position:relative;
+        
+}
+.title02{
+    position:absolute;
+    
+    z-index: 1;
+    top:-200px;
+    right: -2px;
+}
+
+.insideTxt{
+    position: relative; 
+    margin: 2px 0 5px 22px; 
+}
+.insideTxt::before{
+    position: relative;
+    top: -10px; 
+    left: -5px; 
+    content: '.'; 
+    width: 0; height: 0; 
+    color:red;
+    margin-left: 10px;
+    display: inline;
+    vertical-align: top;
+    font-size: 20px;
+}
+.greyBlock2{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 150px;
+    right:  -800px;
+    z-index: -9;
+    background-color:rgb(253, 249, 249);
+}
+.pic2{
+    position: relative;
+    top:-200px;
+    right:  -1px;
+    z-index: -1;
+}
+
+.box3{
+    position: relative;
+}
+.introTitle03 li{
+    background-color: rgb(5, 5, 5);
+    padding: 2px;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px 10px 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    /* list-style: disc red; */
+}
+.title03{
+    position:absolute;
+    
+    z-index: 1;
+    top:-355px;
+    left: -2px;
+}
+.greyBlock3{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -300px;
+    right: -698px;
+    z-index: -9;
+    background-color:rgb(253, 249, 249);
+}
+.pic3{
+    position: relative;
+    top:-455px;
+    right:  -1px;
+    
+}
+.introTitle03{
+    margin:10px 180px;
+    background-color: #dfdede;
+    width: 700px;
+    position: absolute;
+    top: -525px;
+    left: -180px;
+}
+.introTitle03 h3::after{
+    content: '';
+    background-color: #cf0707;
+    width: 450px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.introTitle03 h3{
+    margin: 5px;
+    color:#cf0707;
+}

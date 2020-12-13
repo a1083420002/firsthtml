@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes Myanimation{
+            0%{transform: rotate(20deg);}
+            100%{transform: rotate(-20deg);}
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background-color: red;
+            font-size: 100px;
+            text-align: center;
+            animation-name: Myanimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+</body>
+</html>
