@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .header{
+            display: flex;
+            background-color: #c21b1b;
+            padding: 5px 10px;
+            position: relative;
+            align-items: center;
+        }
+        #menu-check{
+            position: absolute;
+        }
+        .logo{
+            font-size: 24px;
+        }
+        .tel{
+            order: 1;
+            margin-left: auto;
+            margin-right: 10px;
+            text-align: center ;
+        }
+        .tel a{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(14, 13, 13);
+            border-radius: 50%;
+            line-height: 30px;
+            
+            text-decoration: none;
+            color: #fff;
+        }
+        #menu-check{
+            position: absolute;
+        }
+        .main-nav{
+            position: absolute;
+            left:0;
+            top: 100%;
+            width: 100%;
+            background-color: green;
+            display: none;
+        }
+        .main-nav a{
+            display: block;
+            padding:10px;
+        }
+        .main-nav a+a{
+            width: 100%;
+
+            border-top: 1px solid #1d1b1b;
+        }
+        .menu-control{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(10, 40, 209);
+            order: -1;
+            margin-right: 10px;
+        }
+        #menu-check:checked+.header .main-nav{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="menu-check">
+    <header class="header">
+        <h1 class="logo">logo</h1>
+        <div class="tel">
+            <a href="#">
+                <i class="fa fa-phone"></i>
+            </a>
+        </div>
+        <label for="menu-check" class="menu-control"></label>
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex
+        vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex
+        vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex
+        vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex
+        vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex
+        vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex
+        vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+
+
+</body>
+
+</html>

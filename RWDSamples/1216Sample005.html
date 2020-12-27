@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		#menu-check{
+			position: absolute;
+		}
+		.header{
+			background-color: #ccc;
+			display: flex;
+			align-items: center;
+			padding: 5px 10px;
+			position: relative;
+		}
+		.header a{
+			text-decoration: none;
+		}
+		.header .logo{
+			font-size: 24px;
+		}
+		.tel{
+			margin-left: auto;
+		}
+		@media screen and (max-width: 767px) {
+			.menu-control{
+				display: block;
+				width: 36px;
+				height: 36px;
+				background-color: #333;
+				order: -1; 
+				margin-right: 10px;
+			}
+			
+			.tel a{
+				display: block;
+				width: 30px;
+				height: 30px;
+				background-color: #000;
+				color: #fff;
+				line-height: 30px;
+				text-align: center;
+				border-radius: 50%;
+				font-size: 0;
+			}
+			.tel a .fa{
+				font-size: 16px;
+				line-height: 30px;
+			}
+			.header .main-nav{
+				position: absolute;
+				
+                top: 100%;
+                right: -99%;
+				
+                width: 100%;
+                height: calc(100vh-46px);
+                background-color: #fa0;
+                transition: right 1s;
+			}
+			#menu-check:checked + .header .main-nav{
+				right: 0;
+			} 
+			.header .main-nav a{
+				display: block;
+				padding: 10px 30px;
+				color: #fff;
+			}
+			.header .main-nav a + a{
+				border-top: 1px solid #000;
+			}
+		}
+
+		@media screen and (min-width: 768px){
+			.header{
+				flex-wrap: wrap;
+			}
+			.header .logo{
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.header .tel{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+			.header .main-nav{
+				width: 100%;
+				text-align: center;
+			}
+		}
+		@media screen and (min-width: 1024px){
+			.header .logo{
+				margin: 0;
+			}
+			.header .main-nav{
+				width: auto;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.header .tel{
+				position: relative;
+				margin-left: 0;
+				top: 0;
+				right: 0;
+				order: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+
+<input type="checkbox" id="menu-check">
+
+<header class="header">
+	<h1 class="logo">logo</h1>
+	<div class="tel">
+		<a href="#">
+			<i class="fa fa-phone"></i>
+			tel028825252
+		</a>
+	</div>
+	<label for="menu-check" class="menu-control"></label>
+	<nav class="main-nav">
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+	</nav>
+</header>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellendus laudantium quo eum, sapiente a ex vitae. Consequuntur perferendis repellat, quibusdam et sapiente, quae nihil magni mollitia quis esse, totam?</p>
+
+
+	
+</body>
+</html>

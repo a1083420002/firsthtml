@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --box_width:300px;
+            --box_height:300px;
+            --box_margin:10px;
+            --box_color:red;
+        }
+        .box1{
+            width: var(--box_width);
+            height: var(--box_height);
+            margin: var(--box_margin);
+            background-color: var( --box_color);
+        }
+        .box2{
+            width: calc(var(--box_width)*2);
+            height: var(--box_height);
+            margin: var(--box_margin);
+            background-color: var( --box_color);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+</body>
+</html>

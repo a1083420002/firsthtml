@@ -1,0 +1,802 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  padding: 15px;
+
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 0px) {
+  .col-1 {
+    width: 8.33333%;
+  }
+
+  .col-2 {
+    width: 16.66667%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33333%;
+  }
+
+  .col-5 {
+    width: 41.66667%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33333%;
+  }
+
+  .col-8 {
+    width: 66.66667%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33333%;
+  }
+
+  .col-11 {
+    width: 91.66667%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .studyingLanguages {
+    text-align: center;
+
+  }
+
+  .reasons i {
+    margin: 50px 10px 10px 10px;
+    font-size: 20vw;
+  }
+  .introPic img{
+    position: relative;
+    bottom:-20px;
+  }
+  nav .desktop{
+    display: none;
+  }
+  .bookCenter{
+    text-align: center;
+  }
+  .getEmail input{
+
+    width: 80%;
+    
+  }
+  .socialIcon{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .col-sm-1 {
+    width: 8.33333%;
+  }
+
+  .col-sm-2 {
+    width: 16.66667%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+
+  .col-sm-5 {
+    width: 41.66667%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.33333%;
+  }
+
+  .col-sm-8 {
+    width: 66.66667%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.33333%;
+  }
+
+  .col-sm-11 {
+    width: 91.66667%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .studyingLanguages {
+    text-align: center;
+
+  }
+
+  .reasons i {
+    margin: 50px 10px 10px 10px;
+    font-size: 20vw;
+  }
+  .introPic img{
+    position: relative;
+    bottom:-20px;
+    
+  }
+  nav .desktop{
+    display: none;
+  }
+  .bookCenter{
+    text-align: center;
+  }
+  .getEmail input{
+
+    width: 80%;
+    
+  }
+  .socialIcon{
+    display: none;
+  }
+  .copyright{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 720px) {
+  .col-md-1 {
+    width: 8.33333%;
+  }
+
+  .col-md-2 {
+    width: 16.66667%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33333%;
+  }
+
+  .col-md-5 {
+    width: 41.66667%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33333%;
+  }
+
+  .col-md-8 {
+    width: 66.66667%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33333%;
+  }
+
+  .col-md-11 {
+    width: 91.66667%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .reasons i {
+    margin: 50px 10px 10px 10px;
+    font-size: 20vw;
+  }
+
+  .studyingLanguages {
+    text-align: center;
+
+  }
+
+  .reasons i {
+    font-size: 20vw;
+  }
+  .introPic img{
+    position: relative;
+    bottom:-20px;
+  }
+  nav .desktop{
+    display: none;
+  }
+  .bookCenter{
+    text-align: center;
+  }
+  .getEmail input{
+
+    width: 80%;
+    
+  }
+  .socialIcon{
+    display: none;
+  }
+  .copyright{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .col-lg-1 {
+    width: 8.33333%;
+  }
+
+  .col-lg-2 {
+    width: 16.66667%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+
+  .col-lg-5 {
+    width: 41.66667%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33333%;
+  }
+
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33333%;
+  }
+
+  .col-lg-11 {
+    width: 91.66667%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  .studyingLanguages {
+    text-align: center;
+
+  }
+
+  .reasons i {
+
+    font-size: 20vw;
+  }
+  .introPic img{
+    position: relative;
+    bottom:-20px;
+  }
+  nav .desktop{
+    display: none;
+  }
+  .bookCenter{
+    text-align: center;
+  }
+  .getEmail input{
+
+    width: 80%;
+    
+  }
+  .socialIcon{
+    
+    display: flex;
+    
+  }
+  .copyright{
+    display: flex;
+  }
+  .footerAbout{
+    margin:40px 0;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+  .col-xl-1 {
+    width: 8.33333%;
+  }
+
+  .col-xl-2 {
+    width: 16.66667%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.33333%;
+  }
+
+  .col-xl-5 {
+    width: 41.66667%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.33333%;
+  }
+
+  .col-xl-8 {
+    width: 66.66667%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.33333%;
+  }
+
+  .col-xl-11 {
+    width: 91.66667%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  .studyingLanguages h1 {
+    text-align: left;
+
+  }
+
+  .studyingLanguages h3 {
+    text-align: left;
+
+  }
+
+  .studyingLanguages p {
+    text-align: left;
+
+  }
+
+  .reasons {
+    padding: 80px 0;
+  }
+
+  .reasons .iconTxt h3 {
+    font-size: 30px;
+    text-align: left
+  }
+
+  .reasons .iconTxt p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .icon {
+    display: flex;
+  }
+
+  .studyingLanguages {
+    text-align: left;
+
+  }
+
+  .reasons i {
+    
+    margin: 50px 10px;
+    font-size: 65px;
+  }
+  .introPic{
+    position: relative;
+  }
+  .introPic img{
+    position: absolute;
+    top: 60px;
+  }
+  nav .Telephone{
+    display: none;
+  }
+  nav .desktop{
+    display: block;
+  }
+  .getEmail input{
+
+    width: 40%;
+    
+  }
+  .socialIcon ul{
+    display: flex;
+  }
+
+  .copyright{
+    display: flex;
+  }
+  .footerAbout ul{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-35px;
+  }
+  .footerAbout ul li{
+    font-size: 20px;
+    margin: 0px auto;
+    
+    
+  }
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Merriweather', serif;
+}
+
+/* AFTER-------------------------------------- */
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #003c5a;
+}
+
+.menu .span {
+  margin-top: 3px;
+  width: 25px;
+  height: 4px;
+  background: rgb(245, 243, 243);
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu .span:before,
+.menu .span:after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  background: rgb(245, 243, 243);
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+}
+
+.menu .span:before {
+  top: 8px;
+}
+
+.menu .span:after {
+  top: 16px;
+}
+
+.col-7 .logo a {
+  color: rgb(245, 243, 243);
+}
+
+nav .phoneicon {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+  margin-left: 30px;
+}
+
+.phoneicon a {
+  padding: 4px;
+  border-radius: 50%;
+  background: #fff;
+}
+.footerAbout{
+  margin:40px 0;
+}
+
+
+
+
+.openWorld {
+  background: url(../RWDPic/images/page01_img01.png);
+  background-color: #003c5a;
+  padding: 5% 0 30%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.internal {
+  text-align: center;
+}
+
+.internal h2 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.internal p {
+  margin: 20px 0px;
+  font-size: 20px;
+  color: rgb(18, 167, 236);
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 20px 50px;
+  color: #fff;
+  background-color: #eb7f04;
+  font-weight: 1000;
+  border: none;
+  margin: 20px 0px;
+
+}
+.phoneicon i{
+  color: rgb(14, 49, 248);
+  transform: rotate(90deg);
+}
+
+.studyingLanguages {
+
+  margin: auto;
+  padding: 0px 50px;
+
+  background-color: rgb(232, 248, 248);
+}
+
+.studyingLanguages h1 {
+  padding: 50px 0px;
+  font-size: 40px;
+}
+
+.studyingLanguages h3 {
+  padding: 25px 0px;
+  font-size: 30px;
+}
+
+.studyingLanguages p {
+  padding: 15px 0px;
+  font-size: 20px;
+}
+.introPic{
+  position: relative;
+}
+.introPic img{
+  width: 100%;
+}
+
+.forIcon {
+  width: 100%;
+
+
+}
+
+.reasons {
+  text-align: center;
+}
+
+.reasons .col-12 h2 {
+  font-size: 80px;
+}
+
+.forIcon .iconPic {
+  margin: 0 10px;
+  min-width: 100px;
+}
+
+.reasons i {
+  
+
+  color: #fc8f44;
+
+
+}
+
+.iconTxt h3 {
+  font-size: 60px;
+  color: rgb(43, 42, 42);
+  padding: 20px 0px;
+}
+
+.iconTxt p {
+  font-size: 30px;
+  color: rgb(95, 94, 94);
+}
+.bookCenter{
+  padding: 30px 0;
+  background: #eaf2f6;
+  
+}
+.bookCenterPic{
+  width: 100%;
+  
+}
+.bookCenterPic img{
+  width: 100%;
+}
+.bookCenterIntro h3 {
+  padding: 10px 0px 5px 0px;
+  font-size: 50px;
+}
+
+.bookCenterIntro h4 {
+  padding: 25px 0px;
+  font-size: 40px;
+}
+
+.bookCenterIntro p {
+  padding: 15px 0px;
+  font-size: 30px;
+}
+.getEmail{
+  background: #003c5a;
+  text-align: center;
+}
+.getEmail h3{
+  color: #fff;
+  padding: 30px 0px 5px 0px;
+  font-size: 50px;
+}
+.getEmail p{
+  color: #66b8e0;
+  padding: 15px 0px;
+  font-size: 20px;
+}
+.getEmail input{
+  display: inline-block;
+  margin: 20px 10px;
+  font-size: 10px;
+  border-radius: 50px;
+  
+  padding: 20px 10px;
+}
+.getEmail input:focus {
+  outline: none;
+}
+.experience {
+  padding: 50px 0;
+  background: #e76e33;
+  text-align: center;
+}
+
+.experienceContent h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.experienceContent img {
+  display: block;
+  margin: 20px auto;
+}
+
+.experienceContent em {
+  color: #fff;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.experienceContent p {
+  color: #fff;
+  margin: 20px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.experiencePagination ul {
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.experiencePagination ul li a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff40;
+  margin: 0 5px;
+}
+
+.experiencePagination ul li:last-child a {
+  background: #fff;
+  
+  transition: .3s;
+}
+
+.experiencePagination ul li:hover a {
+  background: #fff;
+}
+.footer {
+  background: #272727;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .logo {
+  margin-bottom: 30px;
+}
+
+.footerLogo a{
+  color: #edf4f8;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footerAbout ul li a{
+  color: #7d7d7d;
+  line-height: 30px;
+  
+  transition: .3s;
+}
+.footerAbout ul li:first-child a {
+  color: #edf4f8;
+}
+
+.footerAbout ul li:hover a {
+  color: #edf4f8;
+}
+
+
